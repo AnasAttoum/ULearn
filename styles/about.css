@@ -1,0 +1,80 @@
+.paragraph{
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form{
+    color: #fff;
+}
+
+.form input{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form textarea{
+    width: 100%;
+}
+
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+}
+
+
+.send{
+    color: white;
+    background-color: var(--secondary);
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.send::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 20px;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(-20deg);
+    transition: left .3s;
+    filter: blur(2px);
+}
+
+.send:hover::before{
+    left: calc(100% + 30px);
+}
+
+@media (width<=1000px) {
+    .paragraph{
+        line-height: 25px !important;
+    }
+}
+@media (width<=800px) {
+    .paragraph{
+        line-height: 20px !important;
+    }
+}
+@media (width<=700px) {
+    .aboutContainer{
+        flex-direction: column ;
+    }
+    .paragraph,.form{
+        width: 90% !important;
+        line-height: 30px !important;
+    }
+    .form{
+        padding: 20px !important;
+    }
+    .send{
+        font-size: 12px !important;
+    }
+}

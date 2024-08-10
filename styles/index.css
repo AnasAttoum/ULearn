@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Kurale&display=swap');
+
+:root {
+    --primary: #457b9dc3;
+    --secondary: #457b9d;
+    --subText: #666;
+    --backgroundOpacity: #66666635;
+}
+
+
+/* ANIMATION */
+.simpleTranslateX {
+    opacity: 0;
+    animation: move 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

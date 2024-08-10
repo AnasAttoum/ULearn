@@ -1,0 +1,24 @@
+#partnersContainer>div>img{
+    outline: 3px solid #fff;
+    outline-offset: 10px;
+}
+
+@media (width<700px) {
+    #ourTeamTitle{
+        font-size: 2em !important;
+    }
+    #arrowLeft,#arrowRight{
+        width: 10em;
+        height: 10em;
+    }
+    #arrowLeft{
+        margin-left: -60px;
+    }
+    #arrowRight{
+        margin-right: -60px;
+    }
+    #partnersContainer>div>img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+}

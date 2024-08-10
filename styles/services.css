@@ -1,0 +1,41 @@
+.service{
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+}
+.service:hover{
+    transform: scale(1.05);
+}
+
+.serviceBall1{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--primary);
+    z-index: -2;
+    animation: ball 7s infinite alternate-reverse;
+}
+@keyframes ball {
+    from{
+        transform: translateY(-40px);
+    }
+    to{
+        transform: translateY(40px);
+    }
+}
+
+.serviceBall2{
+    position: absolute;
+    top: 380px;
+    left: 220px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--primary);
+    z-index: -2;
+    animation: ball 7s infinite alternate-reverse;
+}
+
+

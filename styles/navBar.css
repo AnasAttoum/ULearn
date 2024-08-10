@@ -1,0 +1,66 @@
+.navbar {
+    z-index: 20 !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.list>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamb {
+    display: none;
+    cursor: pointer;
+}
+
+@media (width<800px) {
+    .list {
+        display: none !important;
+        flex-direction: column;
+        gap: 0 !important;
+        background-color: var(--primary);
+        padding-top: 67px;
+
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        backdrop-filter: blur(4px);
+
+        z-index: -1 !important;
+
+        animation: scrollDown .2s ease-in;
+    }
+
+    @keyframes scrollDown {
+        from {
+            right: -128;
+        }
+
+        to {
+            right: 0;
+        }
+    }
+
+    .list>a {
+        padding: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .list>a:hover {
+        background-color: var(--secondary);
+    }
+
+    .hamb {
+        display: block;
+    }
+
+    .hamb:hover+.list,
+    .list:hover {
+        display: flex !important;
+    }
+}

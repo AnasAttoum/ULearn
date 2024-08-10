@@ -1,0 +1,22 @@
+@media (width<700px) {
+    .subscribeContainer{
+        padding: 10px !important;
+    }
+    .subscribeContainer>img{
+        top: -80px !important;
+        width: 75px !important;
+        height: 75px !important;
+    }
+    .subscribeTxt{
+        font-size: 15px;
+    }
+    .subscribeTxt+h6{
+        font-size: 10px;
+    }
+    .subscribeEmail{
+        width: 90% !important;
+    }
+    .sendBtn{
+        width: 50% !important;
+    }
+}
