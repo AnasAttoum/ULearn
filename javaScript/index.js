@@ -4,7 +4,6 @@ const imgs = document.querySelectorAll('#partnersContainer>div')
 const arrowLeft = document.getElementById('arrowLeft')
 
 const firstImage = document.querySelectorAll('#partners>div>div>div:first-child>img')
-console.log("🚀 ~ firstImage:", firstImage)
 const firstImageObserver = new IntersectionObserver(firstImage => {
     firstImage.forEach(img => {
         if (img.isIntersecting) {
@@ -29,7 +28,6 @@ arrowLeft.addEventListener('click', () => {
 const arrowRight = document.getElementById('arrowRight')
 
 const lastImage = document.querySelectorAll('#partners>div>div>div:last-child>img')
-console.log("🚀 ~ lastImage:", lastImage)
 const lastImageObserver = new IntersectionObserver(lastImage => {
     lastImage.forEach(img => {
         if (img.isIntersecting) {

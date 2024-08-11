@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/subscribe.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>ULearn</title>
 </head>
 
@@ -118,7 +119,7 @@
 
         <div class="d-flex flex-wrap justify-content-center gap-5 p-5">
 
-            <div class="position-relative service" style="width: 288px;">
+            <div class="position-relative service m-5" style="width: 288px;">
                 <div class="d-flex flex-column justify-content-center align-items-center rounded p-3"
                     style="background-color: var(--backgroundOpacity); backdrop-filter: blur(4px); z-index: 1;">
                     <img class="m-5 rounded-circle" style="width: 200px;height: 200px;" src="public/images/Cources.jpg"
@@ -132,12 +133,12 @@
                 <div class="serviceBall2"></div>
             </div>
 
-            <div class="position-relative service" style="width: 288px;">
+            <div class="position-relative service m-5" style="width: 288px;">
                 <div class="d-flex flex-column justify-content-center align-items-center rounded p-3"
                     style="background-color: var(--backgroundOpacity); backdrop-filter: blur(4px); z-index: 1;">
                     <img class="m-5 rounded-circle" style="width: 200px;height: 200px;"
                         src="public/images/Certification.jpg" alt="Our Team">
-                    <h3 style="color: var(--primary);">Certification services</h3>
+                    <h3 style="color: var(--primary);">Certification Services</h3>
                     <p style="text-align: justify;">
                         Allow learners to earn certificates upon completing courses they have chosen.
                     </p>
@@ -146,12 +147,12 @@
                 <div class="serviceBall2"></div>
             </div>
 
-            <div class="position-relative service" style="width: 288px;">
+            <div class="position-relative service m-5" style="width: 288px;">
                 <div class="d-flex flex-column justify-content-center align-items-center rounded p-3"
                     style="background-color: var(--backgroundOpacity); backdrop-filter: blur(4px); z-index: 1;">
                     <img class="m-5 rounded-circle" style="width: 200px;height: 200px;" src="public/images/Support.jpg"
                         alt="Our Team">
-                    <h3 style="color: var(--primary);">Community support</h3>
+                    <h3 style="color: var(--primary);">Community Support</h3>
                     <p style="text-align: justify;">
                         Creating a community where learners can connect and interact with each other.
                     </p>
@@ -207,31 +208,98 @@
         </h1>
 
         <div class="p-5">
-            <div class="d-flex flex-column align-items-center p-5 gap-3 position-relative subscribeContainer" style="background-color: var(--backgroundOpacity);">
-                <img src="./public/images/Contact.gif" alt="Subscribe to our newsletter" class="rounded-circle m-5" style="position: absolute;top: -125px;width: 150px;height: 150px;margin-top: -200px;">
+            <div class="d-flex flex-column align-items-center p-5 gap-3 position-relative subscribeContainer"
+                style="background-color: var(--backgroundOpacity);">
+                <img src="./public/images/Contact.gif" alt="Subscribe to our newsletter" class="rounded-circle m-5"
+                    style="position: absolute;top: -125px;width: 150px;height: 150px;margin-top: -200px;">
                 <h4 class="mt-5 subscribeTxt">Subscribe to news letter</h4>
                 <h6>enter email to stay up to date with latest news and updates before anyone</h6>
 
-                    <div class="input-group mb-3 subscribeEmail" style="width: 50%;">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"
-                                style="background-color: var(--primary);width: 50px;height: 50px;border-top-left-radius: 30%;border-bottom-left-radius: 30%;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z" />
-                                </svg>
-                            </span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
-                            aria-describedby="basic-addon1">
+                <div class="input-group mb-3 subscribeEmail" style="width: 50%;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"
+                            style="background-color: var(--primary);width: 50px;height: 50px;border-top-left-radius: 30%;border-bottom-left-radius: 30%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                                <path fill="white"
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z" />
+                            </svg>
+                        </span>
                     </div>
-                    <div class="send sendBtn" style="width: 20%;">S E N D</div>
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="send sendBtn" style="width: 20%;">S E N D</div>
             </div>
         </div>
 
     </div>
 
-    
+    <!-- _________________________________________________________ FOOTER SECTION _______________________________________________________-->
+    <div class="p-5 pb-1 foo" style="background-color: var(--primary);">
+        <div class="d-flex justify-content-evenly gap-5">
+
+            <div class="d-flex flex-column align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 16 16">
+                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7"
+                        d="M14.25 9.25V6L8 2.75L1.75 6L8 9.25l3.25-1.5v3.5c0 1-1.5 2-3.25 2s-3.25-1-3.25-2v-3.5" />
+                </svg>
+                <h1 class="fw-bold" style="color: #fff;">ULearn</h1>
+            </div>
+
+            <div class="d-flex flex-column" style="color: #fff;">
+                <h3 class="fw-bold">Company</h3>
+                <a href="#home">HOME</a>
+                <a href="#partners">PARTNERS</a>
+                <a href="#services">SERVICES</a>
+                <a href="#about">ABOUT</a>
+                <a href="#subscribe">SUBSCRIBE</a>
+            </div>
+
+            <div class="d-flex flex-column " style="color: #fff;">
+                <h3 class="fw-bold">Services</h3>
+                <div>Online Courses</div>
+                <div>Certification Services</div>
+                <div>Community Support</div>
+                <div>Places To Study</div>
+                <div>Others</div>
+            </div>
+
+            <div class="d-flex flex-column " style="color: #fff;">
+                <h3 class="fw-bold">More</h3>
+                <div>Advertise</div>
+                <div>Privacy Policy</div>
+                <div>Terms & Conditions</div>
+            </div>
+
+            <div class="d-flex flex-column " style="color: #fff;">
+                <h3 class="fw-bold">Contact Us</h3>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 512 512">
+                        <path fill="white"
+                            d="M391 480c-19.52 0-46.94-7.06-88-30c-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0 1 28.64-15.2c1-.43 1.93-.84 2.76-1.21c4.95-2.23 12.45-5.6 21.95-2c6.34 2.38 12 7.25 20.86 16c18.17 17.92 43 57.83 52.16 77.43c6.15 13.21 10.22 21.93 10.23 31.71c0 11.45-5.76 20.28-12.75 29.81c-1.31 1.79-2.61 3.5-3.87 5.16c-7.61 10-9.28 12.89-8.18 18.05c2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47c1.48-1.13 3-2.3 4.59-3.47c10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18c18 9.08 59.11 33.59 77.14 51.78c8.77 8.84 13.66 14.48 16.05 20.81c3.6 9.53.21 17-2 22c-.37.83-.78 1.74-1.21 2.75a176.5 176.5 0 0 1-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.4 67.4 0 0 1 391 480" />
+                    </svg>
+                    +963 951 931 846
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z" />
+                    </svg>
+                    AnasAttoum.12321@gmail.com
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="white"
+                            d="M6 .5A4.5 4.5 0 0 1 10.5 5c0 1.863-1.42 3.815-4.2 5.9a.5.5 0 0 1-.6 0C2.92 8.815 1.5 6.863 1.5 5A4.5 4.5 0 0 1 6 .5m0 3a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3" />
+                    </svg>
+                    Homs, Syria
+                </div>
+            </div>
+
+        </div>
+
+        <h6 class="fw-bold text-center pt-5" style="color: #fff;">© 2024 ULearn. All Rights Reserved.</h6>
+    </div>
 
 
     <script src="./javaScript/index.js"></script>

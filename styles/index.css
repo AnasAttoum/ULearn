@@ -7,6 +7,11 @@
     --backgroundOpacity: #66666635;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 /* ANIMATION */
 .simpleTranslateX {

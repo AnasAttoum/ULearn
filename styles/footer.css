@@ -1,0 +1,70 @@
+@media (width<1000px) {
+    .foo>div>div:first-child>svg{
+        width: 5em;
+        height: 5em;
+    }
+    .foo>div>div:first-child>h1{
+        font-size: 20px;
+    }
+    
+    .foo>div{
+        font-size: 12px;
+    }
+}
+
+@media (width<800px) {
+    .foo>div>div:first-child{
+        width: 100%;
+    }
+    .foo>div{
+        flex-wrap: wrap;
+    }
+    .foo>div>div:first-child>h1{
+        font-size: 3vw;
+    }
+    
+    .foo>div{
+        font-size: 1.5vw;
+    }
+}
+
+@media (width<600px) {
+    .foo>div>div:first-child>svg{
+        width: 7em;
+        height: 7em;
+    }
+    .foo>div>div:first-child>h1{
+        font-size: 25px;
+    }
+
+    .foo>div>div{
+        width: 170px;
+        font-size: 10px;
+    }
+}
+
+
+@media (width<=485px) {
+
+    .foo>div>div>h3{
+        font-size: 15px !important;
+    }
+
+    .foo>div>div{
+        width: 115px !important;
+        font-size: 7px;
+    }
+    .foo>div>div:first-child{
+        width: 100% !important;
+    }
+}
+
+@media (width<=375px) {
+    .foo>div>div>h3{
+        font-size: 15px !important;
+    }
+    .foo>div>div{
+        width: 40% !important;
+        font-size: 7px;
+    }
+}
